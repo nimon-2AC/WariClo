@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      target: develop
+    working_dir: /app
+    volumes:
+      - node_modules:/app/node_modules
+    ports:
+      - 3001:3001
+    command: npm run dev
+
+volumes:
+  node_modules:
