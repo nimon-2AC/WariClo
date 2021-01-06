@@ -2,12 +2,25 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js"
   },
   devtool: "source-map",
+
+  module: {
+    rules: [
+      {
+        test: /\.(ts)$/,
+        exclude: /node_modules/,
+        loader: "ts-loader"
+      }
+    ]
+  },
+  resolve: {
+    extensions: [".ts", ".js"]
+  },
 
   plugins: [
     new HtmlWebpackPlugin({
@@ -24,7 +37,7 @@ module.exports = {
     port: 3001,
     watchContentBase: true,
     watchOptions: {
-      ignored: "./node_modules/",
+      ignored: /node_modules/,
       poll: 1000
     }
   }
