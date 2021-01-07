@@ -1,11 +1,12 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+/* eslint @typescript-eslint/no-var-requires: 0 */
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: "./src/index.ts",
   output: {
     path: path.join(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
   devtool: "source-map",
 
@@ -14,12 +15,12 @@ module.exports = {
       {
         test: /\.(ts)$/,
         exclude: /node_modules/,
-        loader: "ts-loader"
-      }
-    ]
+        loader: "ts-loader",
+      },
+    ],
   },
   resolve: {
-    extensions: [".ts", ".js"]
+    extensions: [".ts", ".js"],
   },
 
   plugins: [
@@ -38,7 +39,7 @@ module.exports = {
     watchContentBase: true,
     watchOptions: {
       ignored: /node_modules/,
-      poll: 1000
-    }
-  }
+      poll: 1000,
+    },
+  },
 };

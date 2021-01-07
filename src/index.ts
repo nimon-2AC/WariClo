@@ -1,3 +1,3 @@
-import { test } from './components/test';
+import { test } from "./components/test";
 
 test();
