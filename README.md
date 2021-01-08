@@ -4,7 +4,9 @@
 
 ドーナツ型のアナログ時計とデジタル時計のサイトのソースです。
 
-![サイトイメージ](./img/clock.png)
+<div style="text-align: center">
+  <img src="./img/clock.png" alt="サイトイメージ" width="60%">
+</div>
 
 ## 開発
 
@@ -26,5 +28,5 @@ VSCode で開発するなら [Remote Containers](https://code.visualstudio.com/d
 
 ### プロトタイプ（Figma）
 
-[プロトタイプ編集画面（編集はできないよ）](https://www.figma.com/file/zl0ihnkAH6VYWpeUDUBd3e/PC?node-id=0%3A1)
-[プロトタイプ実行画面](https://www.figma.com/proto/zl0ihnkAH6VYWpeUDUBd3e/PC?node-id=53%3A1836&scaling=min-zoom)
+- [プロトタイプ編集画面（編集はできないよ）](https://www.figma.com/file/zl0ihnkAH6VYWpeUDUBd3e/PC?node-id=0%3A1)
+- [プロトタイプ実行画面](https://www.figma.com/proto/zl0ihnkAH6VYWpeUDUBd3e/PC?node-id=53%3A1836&scaling=min-zoom)
