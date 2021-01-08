@@ -4,9 +4,7 @@
 
 ドーナツ型のアナログ時計とデジタル時計のサイトのソースです。
 
-<div style="text-align: center">
-  <img src="./img/clock.png" alt="サイトイメージ" width="60%">
-</div>
+<img src="./img/clock.png" alt="サイトイメージ" width="60%">
 
 ## 開発
 
