@@ -41,8 +41,14 @@
       }
 
       .donut-text {
-        fill: #F2F2F2;
         font-size: 18;
+        text-transform: capitalize;
+      }
+      .donut-text-color-dark {
+        fill: #333333;
+      }
+      .donut-text-color-light {
+        fill: #F2F2F2;
       }
 
       .month-color-base {
@@ -136,6 +142,14 @@
                    Z"
                 id="month-text-path"
               />
+              <text id="month-text" class="donut-text" dominant-baseline="text-after-edge">
+                <textPath xlink:href="#month-text-path" startOffset="0.1%">
+                  Month
+                </textPath>
+              </text>
+              <clipPath id="month-text-clip">
+                <use xlink:href="#month-text" />
+              </clipPath>
             </defs>
             <g class="donut-background">
               <use xlink:href="#month-donut" class="month-color-base" />
@@ -145,11 +159,8 @@
               <use xlink:href="#month-foreground" clip-path="url(#month-donut-clip)" class="month-color-base" />
               <use xlink:href="#month-foreground" clip-path="url(#month-donut-clip)" class="month-color-main" />
             </g>
-            <text class="donut-text" dominant-baseline="text-after-edge">
-              <textPath xlink:href="#month-text-path" startOffset="0.1%">
-                Month
-              </textPath>
-            </text>
+            <use xlink:href="#month-text" class="donut-text-color-dark" />
+            <use xlink:href="#month-foreground" clip-path="url(#month-text-clip)" class="donut-text-color-light" />
           </g>
 
           <g class="date" stroke-width="0">
@@ -182,6 +193,14 @@
                    Z"
                 id="date-text-path"
               />
+              <text id="date-text" class="donut-text" dominant-baseline="text-after-edge">
+                <textPath xlink:href="#date-text-path" startOffset="0.1%">
+                  date
+                </textPath>
+              </text>
+              <clipPath id="date-text-clip">
+                <use xlink:href="#date-text" />
+              </clipPath>
             </defs>
             <g class="donut-background">
               <use xlink:href="#date-donut" class="date-color-base" />
@@ -191,11 +210,8 @@
               <use xlink:href="#date-foreground" clip-path="url(#date-donut-clip)" class="date-color-base" />
               <use xlink:href="#date-foreground" clip-path="url(#date-donut-clip)" class="date-color-main" />
             </g>
-            <text class="donut-text" dominant-baseline="text-after-edge">
-              <textPath xlink:href="#date-text-path" startOffset="0.1%">
-                Date
-              </textPath>
-            </text>
+            <use xlink:href="#date-text" class="donut-text-color-dark" />
+            <use xlink:href="#date-foreground" clip-path="url(#date-text-clip)" class="donut-text-color-light" />
           </g>
 
           <g class="hour" stroke-width="0">
@@ -228,6 +244,14 @@
                    Z"
                 id="hour-text-path"
               />
+              <text id="hour-text" class="donut-text" dominant-baseline="text-after-edge">
+                <textPath xlink:href="#hour-text-path" startOffset="0.1%">
+                  hour
+                </textPath>
+              </text>
+              <clipPath id="hour-text-clip">
+                <use xlink:href="#hour-text" />
+              </clipPath>
             </defs>
             <g class="donut-background">
               <use xlink:href="#hour-donut" class="hour-color-base" />
@@ -237,11 +261,8 @@
               <use xlink:href="#hour-foreground" clip-path="url(#hour-donut-clip)" class="hour-color-base" />
               <use xlink:href="#hour-foreground" clip-path="url(#hour-donut-clip)" class="hour-color-main" />
             </g>
-            <text class="donut-text" dominant-baseline="text-after-edge">
-              <textPath xlink:href="#hour-text-path" startOffset="0.1%">
-                Hour
-              </textPath>
-            </text>
+            <use xlink:href="#hour-text" class="donut-text-color-dark" />
+            <use xlink:href="#hour-foreground" clip-path="url(#hour-text-clip)" class="donut-text-color-light" />
           </g>
 
           <g class="minute" stroke-width="0">
@@ -272,8 +293,16 @@
                    A 202.5 202.5 0 1 1 0  202.5
                    A 202.5 202.5 0 1 1 0 -202.5
                    Z"
-                id="minue-text-path"
+                id="minute-text-path"
               />
+              <text id="minute-text" class="donut-text" dominant-baseline="text-after-edge">
+                <textPath xlink:href="#minute-text-path" startOffset="0.1%">
+                  minute
+                </textPath>
+              </text>
+              <clipPath id="minute-text-clip">
+                <use xlink:href="#minute-text" />
+              </clipPath>
             </defs>
             <g class="donut-background">
               <use xlink:href="#minute-donut" class="minute-color-base" />
@@ -283,11 +312,8 @@
               <use xlink:href="#minute-foreground" clip-path="url(#minute-donut-clip)" class="minute-color-base" />
               <use xlink:href="#minute-foreground" clip-path="url(#minute-donut-clip)" class="minute-color-main" />
             </g>
-            <text class="donut-text" dominant-baseline="text-after-edge">
-              <textPath xlink:href="#minue-text-path" startOffset="0.1%">
-                Minute
-              </textPath>
-            </text>
+            <use xlink:href="#minute-text" class="donut-text-color-dark" />
+            <use xlink:href="#minute-foreground" clip-path="url(#minute-text-clip)" class="donut-text-color-light" />
           </g>
 
           <g class="second" stroke-width="0">
@@ -320,6 +346,14 @@
                    Z"
                 id="second-text-path"
               />
+              <text id="second-text" class="donut-text" dominant-baseline="text-after-edge">
+                <textPath xlink:href="#second-text-path" startOffset="0.1%">
+                  second
+                </textPath>
+              </text>
+              <clipPath id="second-text-clip">
+                <use xlink:href="#second-text" />
+              </clipPath>
             </defs>
             <g class="donut-background">
               <use xlink:href="#second-donut" class="second-color-base" />
@@ -329,11 +363,8 @@
               <use xlink:href="#second-foreground" clip-path="url(#second-donut-clip)" class="second-color-base" />
               <use xlink:href="#second-foreground" clip-path="url(#second-donut-clip)" class="second-color-main" />
             </g>
-            <text class="donut-text" dominant-baseline="text-after-edge">
-              <textPath xlink:href="#second-text-path" startOffset="0.1%">
-                Second
-              </textPath>
-            </text>
+            <use xlink:href="#second-text" class="donut-text-color-dark" />
+            <use xlink:href="#second-foreground" clip-path="url(#second-text-clip)" class="donut-text-color-light" />
           </g>
         </g>
       </svg>
