@@ -1,3 +1,5 @@
+import "./style/index.scss";
+
 import { layOutDigitalClock, moveDigitalClock } from "./components/layOutDigitalClock";
 import { updateClock } from "./components/updateClock";
 import { updateDigitalClockText } from "./components/updateDigitalClockText";

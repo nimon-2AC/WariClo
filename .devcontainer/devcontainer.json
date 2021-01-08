@@ -29,6 +29,7 @@
 	"extensions": [
 		"esbenp.prettier-vscode",
 		"dbaeumer.vscode-eslint",
+		"stylelint.vscode-stylelint",
 		"eamodio.gitlens"
 	],
 
