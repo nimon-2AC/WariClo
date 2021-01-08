@@ -2,18 +2,21 @@ import { layOutDigitalClock, moveDigitalClock } from "./components/layOutDigital
 import { updateClock } from "./components/updateClock";
 import { updateDigitalClockText } from "./components/updateDigitalClockText";
 
-setInterval(() => {
+function animate(): void {
   const date = new Date();
   updateDigitalClockText(date);
   layOutDigitalClock();
   updateClock(date);
-}, 100);
+
+  requestAnimationFrame(animate);
+}
 
 document.addEventListener(
   "DOMContentLoaded",
   () => {
     layOutDigitalClock();
     moveDigitalClock(-5);
+    animate();
   },
   false,
 );
