@@ -1,3 +1,6 @@
-import { test } from "./components/test";
+import { updateDigitalWatchText } from "./components/updateDigitalWatchText";
 
-test();
+setInterval(() => {
+  const date = new Date();
+  updateDigitalWatchText(date);
+}, 100);
