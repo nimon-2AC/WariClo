@@ -67,6 +67,17 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.xml$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: {
