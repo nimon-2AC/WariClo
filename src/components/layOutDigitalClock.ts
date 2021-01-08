@@ -29,7 +29,7 @@ function moveDigitalClock(dy: number): void {
 }
 
 function layOutDigitalClock(): void {
-  alignTextsSpaceBetween(20);
+  alignTextsSpaceBetween(10);
 }
 
 export { layOutDigitalClock, moveDigitalClock };
