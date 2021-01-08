@@ -1,4 +1,5 @@
 import "./style/index.scss";
+import "./static/CNAME";
 
 import { layOutDigitalClock, moveDigitalClock } from "./components/layOutDigitalClock";
 import { updateClock } from "./components/updateClock";
