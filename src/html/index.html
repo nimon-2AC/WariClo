@@ -12,5 +12,233 @@
       <span id="YYYY-MM-DD"></span>
       <span id="WWW"></span>
     </div>
+
+    <div class="donuts">
+      <style>
+        .donut-background {
+          opacity: 0.1;
+        }
+        .donut-foreground {
+          opacity: 1.0;
+        }
+
+        .month-color-base {
+          fill: #333333;
+          fill-opacity: 1.0;
+        }
+        .month-color-main {
+          fill: #2F80ED;
+          fill-opacity: 0.2;
+        }
+
+        .date-color-base {
+          fill: #333333;
+          fill-opacity: 1.0;
+        }
+        .date-color-main {
+          fill: #2F80ED;
+          fill-opacity: 0.4;
+        }
+
+        .hour-color-base {
+          fill: #333333;
+          fill-opacity: 1.0;
+        }
+        .hour-color-main {
+          fill: #2F80ED;
+          fill-opacity: 0.6;
+        }
+
+        .minute-color-base {
+          fill: #333333;
+          fill-opacity: 1.0;
+        }
+        .minute-color-main {
+          fill: #2F80ED;
+          fill-opacity: 0.8;
+        }
+
+        .second-color-base {
+          fill: #333333;
+          fill-opacity: 1.0;
+        }
+        .second-color-main {
+          fill: #2F80ED;
+          fill-opacity: 1.0;
+        }
+      </style>
+
+      <svg width="80%" height="80%" viewBox="-300 -300 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g class="month" stroke-width="0">
+          <defs>
+            <path
+              d="M 0 300
+                   A 300 300 0 1 0 0 -300
+                   A 300 300 0 1 0 0  300
+                   Z
+                 M 0 277.5
+                   A 277.5 277.5 0 1 1 0 -277.5
+                   A 277.5 277.5 0 1 1 0  277.5
+                   Z"
+              id="month-donut"
+            />
+            <clipPath id="month-donut-clip">
+              <use xlink:href="#month-donut" />
+            </clipPath>
+            <path
+              d="M 0 0
+                   L 0 -300
+                   A 300 300 0 0 1 300 0
+                   Z"
+              id="month-foreground"
+            />
+          </defs>
+          <g class="donut-background">
+            <use xlink:href="#month-donut" class="month-color-base" />
+            <use xlink:href="#month-donut" class="month-color-main" />
+          </g>
+          <g class="donut-foreground">
+            <use xlink:href="#month-foreground" clip-path="url(#month-donut-clip)" class="month-color-base" />
+            <use xlink:href="#month-foreground" clip-path="url(#month-donut-clip)" class="month-color-main" />
+          </g>
+        </g>
+
+        <g class="date" stroke-width="0">
+          <defs>
+            <path
+              d="M 0 275
+                   A 275 275 0 1 0 0 -275
+                   A 275 275 0 1 0 0  275
+                   Z
+                 M 0 252.5
+                   A 252.5 252.5 0 1 1 0 -252.5
+                   A 252.5 252.5 0 1 1 0  252.5
+                   Z"
+              id="date-donut"
+            />
+            <clipPath id="date-donut-clip">
+              <use xlink:href="#date-donut" />
+            </clipPath>
+            <path
+              d="M 0 0
+                   L 0 -275
+                   A 275 275 0 0 1 275 0
+                   Z"
+              id="date-foreground"
+            />
+          </defs>
+          <g class="donut-background">
+            <use xlink:href="#date-donut" class="date-color-base" />
+            <use xlink:href="#date-donut" class="date-color-main" />
+          </g>
+          <g class="donut-foreground">
+            <use xlink:href="#date-foreground" clip-path="url(#date-donut-clip)" class="date-color-base" />
+            <use xlink:href="#date-foreground" clip-path="url(#date-donut-clip)" class="date-color-main" />
+          </g>
+        </g>
+
+        <g class="hour" stroke-width="0">
+          <defs>
+            <path
+              d="M 0 250
+                   A 250 250 0 1 0 0 -250
+                   A 250 250 0 1 0 0  250
+                   Z
+                 M 0 227.5
+                   A 227.5 227.5 0 1 1 0 -227.5
+                   A 227.5 227.5 0 1 1 0  227.5
+                   Z"
+              id="hour-donut"
+            />
+            <clipPath id="hour-donut-clip">
+              <use xlink:href="#hour-donut" />
+            </clipPath>
+            <path
+              d="M 0 0
+                   L 0 -250
+                   A 250 250 0 0 1 250 0
+                   Z"
+              id="hour-foreground"
+            />
+          </defs>
+          <g class="donut-background">
+            <use xlink:href="#hour-donut" class="hour-color-base" />
+            <use xlink:href="#hour-donut" class="hour-color-main" />
+          </g>
+          <g class="donut-foreground">
+            <use xlink:href="#hour-foreground" clip-path="url(#hour-donut-clip)" class="hour-color-base" />
+            <use xlink:href="#hour-foreground" clip-path="url(#hour-donut-clip)" class="hour-color-main" />
+          </g>
+        </g>
+
+        <g class="minute" stroke-width="0">
+          <defs>
+            <path
+              d="M 0 225
+                   A 225 225 0 1 0 0 -225
+                   A 225 225 0 1 0 0  225
+                   Z
+                 M 0 202.5
+                   A 202.5 202.5 0 1 1 0 -202.5
+                   A 202.5 202.5 0 1 1 0  202.5
+                   Z"
+              id="minute-donut"
+            />
+            <clipPath id="minute-donut-clip">
+              <use xlink:href="#minute-donut" />
+            </clipPath>
+            <path
+              d="M 0 0
+                   L 0 -225
+                   A 225 225 0 0 1 225 0
+                   Z"
+              id="minute-foreground"
+            />
+          </defs>
+          <g class="donut-background">
+            <use xlink:href="#minute-donut" class="minute-color-base" />
+            <use xlink:href="#minute-donut" class="minute-color-main" />
+          </g>
+          <g class="donut-foreground">
+            <use xlink:href="#minute-foreground" clip-path="url(#minute-donut-clip)" class="minute-color-base" />
+            <use xlink:href="#minute-foreground" clip-path="url(#minute-donut-clip)" class="minute-color-main" />
+          </g>
+        </g>
+
+        <g class="second" stroke-width="0">
+          <defs>
+            <path
+              d="M 0 200
+                   A 200 200 0 1 0 0 -200
+                   A 200 200 0 1 0 0  200
+                   Z
+                 M 0 177.5
+                   A 177.5 177.5 0 1 1 0 -177.5
+                   A 177.5 177.5 0 1 1 0  177.5
+                   Z"
+              id="second-donut"
+            />
+            <clipPath id="second-donut-clip">
+              <use xlink:href="#second-donut" />
+            </clipPath>
+            <path
+              d="M 0 0
+                   L 0 -200
+                   A 200 200 0 0 1 200 0
+                   Z"
+              id="second-foreground"
+            />
+          </defs>
+          <g class="donut-background">
+            <use xlink:href="#second-donut" class="second-color-base" />
+            <use xlink:href="#second-donut" class="second-color-main" />
+          </g>
+          <g class="donut-foreground">
+            <use xlink:href="#second-foreground" clip-path="url(#second-donut-clip)" class="second-color-base" />
+            <use xlink:href="#second-foreground" clip-path="url(#second-donut-clip)" class="second-color-main" />
+          </g>
+        </g>
+      </svg>
+    </div>
   </body>
 </html>
