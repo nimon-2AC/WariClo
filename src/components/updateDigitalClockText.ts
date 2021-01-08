@@ -13,8 +13,16 @@ function toStringWithZeroPadding(n: number, stringLength: number) {
 }
 
 function toDayString(dayOfTheWeek: number) {
-  const dayStringTable: ReadonlyArray<string> = ["日", "月", "火", "水", "木", "金", "土"];
-  return dayStringTable[dayOfTheWeek];
+  const daysInWeek: ReadonlyArray<string> = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return daysInWeek[dayOfTheWeek];
 }
 
 function updateDigitalClockText(date: Date): void {
@@ -26,7 +34,7 @@ function updateDigitalClockText(date: Date): void {
   if (MM) MM.innerHTML = toStringWithZeroPadding(date.getMonth() + 1, 2);
   if (DD) DD.innerHTML = toStringWithZeroPadding(date.getDate(), 2);
 
-  if (WWW) WWW.innerHTML = `（${toDayString(date.getDay())}）`;
+  if (WWW) WWW.innerHTML = `${toDayString(date.getDay())}`;
 }
 
 export { updateDigitalClockText };
