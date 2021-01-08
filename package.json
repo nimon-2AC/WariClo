@@ -1,6 +1,6 @@
 {
-  "name": "clock",
-  "version": "0.1.0",
+  "name": "wariclo",
+  "version": "1.0.0",
   "description": "時計です",
   "main": "src/index.ts",
   "scripts": {
@@ -8,10 +8,10 @@
     "build": "NODE_ENV=production webpack --mode production",
     "serve": "webpack --mode development",
     "dev": "webpack serve --mode development",
-    "lint": "tsc --noEmit; eslint src; exit 0",
-    "fix": "eslint --fix src; exit 0"
+    "lint": "tsc --noEmit; eslint src; stylelint src; exit 0",
+    "fix": "eslint --fix src; stylelint --fix src; exit 0"
   },
-  "author": "",
+  "author": "nimon-2AC",
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.12.0",

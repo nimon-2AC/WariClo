@@ -68,7 +68,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(__dirname, "src", "html", "index.html"),
-      title: "clock",
+      title: "WariClo -- ドーナツ型年時計",
+      templateParameters: {
+        description:
+          "WariClo はドーナツ型のアナログ時計とデジタル時計を表示するサイトです。「“いま”って 1 年のうちどのくらいが過ぎた？ 1 月なら？ 1 日なら？ 1 時間なら？ 1 分なら？」というのを視覚的にわかりやすく表示します。WariClo という名前は割合を表示する時計であるところから付けられています。",
+      },
     }),
 
     new StylelintPlugin(),
