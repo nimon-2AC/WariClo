@@ -20,7 +20,7 @@ function alignTextsSpaceBetween(padding: number): void {
   );
 }
 
-function moveDigitalWatch(dy: number): void {
+function moveDigitalClock(dy: number): void {
   if (!hhmmss || !YYYYMMDD || !WWW) return;
 
   hhmmss.setAttribute("y", (parseInt(hhmmss.getAttribute("y") || "0", 10) + dy).toString(10));
@@ -28,8 +28,8 @@ function moveDigitalWatch(dy: number): void {
   WWW.setAttribute("y", (parseInt(WWW.getAttribute("y") || "0", 10) + dy).toString(10));
 }
 
-function layOutDigitalWatch(): void {
+function layOutDigitalClock(): void {
   alignTextsSpaceBetween(20);
 }
 
-export { layOutDigitalWatch, moveDigitalWatch };
+export { layOutDigitalClock, moveDigitalClock };

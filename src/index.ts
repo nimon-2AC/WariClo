@@ -1,17 +1,17 @@
-import { layOutDigitalWatch, moveDigitalWatch } from "./components/layOutDigitalWatch";
-import { updateDigitalWatchText } from "./components/updateDigitalWatchText";
+import { layOutDigitalClock, moveDigitalClock } from "./components/layOutDigitalClock";
+import { updateDigitalClockText } from "./components/updateDigitalClockText";
 
 setInterval(() => {
   const date = new Date();
-  updateDigitalWatchText(date);
-  layOutDigitalWatch();
+  updateDigitalClockText(date);
+  layOutDigitalClock();
 }, 100);
 
 document.addEventListener(
   "DOMContentLoaded",
   () => {
-    layOutDigitalWatch();
-    moveDigitalWatch(-5);
+    layOutDigitalClock();
+    moveDigitalClock(-5);
   },
   false,
 );

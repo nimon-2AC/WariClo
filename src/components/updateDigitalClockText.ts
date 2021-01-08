@@ -17,7 +17,7 @@ function toDayString(dayOfTheWeek: number) {
   return dayStringTable[dayOfTheWeek];
 }
 
-function updateDigitalWatchText(date: Date): void {
+function updateDigitalClockText(date: Date): void {
   if (hh) hh.innerHTML = toStringWithZeroPadding(date.getHours(), 2);
   if (mm) mm.innerHTML = toStringWithZeroPadding(date.getMinutes(), 2);
   if (ss) ss.innerHTML = toStringWithZeroPadding(date.getSeconds(), 2);
@@ -29,4 +29,4 @@ function updateDigitalWatchText(date: Date): void {
   if (WWW) WWW.innerHTML = `（${toDayString(date.getDay())}）`;
 }
 
-export { updateDigitalWatchText };
+export { updateDigitalClockText };
