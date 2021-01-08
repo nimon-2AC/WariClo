@@ -1,5 +1,7 @@
 # WariClo
 
+![Build and deploy website](https://github.com/nimon-2AC/WariClo/workflows/Build%20and%20deploy%20website/badge.svg)
+
 ## これは何？
 
 ドーナツ型のアナログ時計とデジタル時計のサイトのソースです。
