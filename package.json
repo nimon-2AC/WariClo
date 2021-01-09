@@ -2,7 +2,7 @@
   "name": "wariclo",
   "version": "1.0.0",
   "description": "時計です",
-  "main": "src/index.ts",
+  "main": "src/script/index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/nimon-2AC/WariClo.git"

@@ -7,7 +7,7 @@ const StylelintPlugin = require("stylelint-webpack-plugin");
 const enabledSourceMap = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: "./src/index.ts",
+  entry: "./src/script/index.ts",
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
