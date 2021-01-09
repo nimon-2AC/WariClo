@@ -52,31 +52,18 @@ body {
   fill: $text-sub-color;
 }
 
-@mixin fillmain($opacity: 1) {
-  fill: $main-color;
-  fill-opacity: $opacity;
+.month-color {
+  fill: $month-color;
 }
-
-.month-color-base,
-.date-color-base,
-.hour-color-base,
-.minute-color-base,
-.second-color-base {
-  fill: $base-color;
-  fill-opacity: 1;
+.date-color {
+  fill: $date-color;
 }
-.month-color-main {
-  @include fillmain(0.2);
+.hour-color {
+  fill: $hour-color;
 }
-.date-color-main {
-  @include fillmain(0.4);
+.minute-color {
+  fill: $minute-color;
 }
-.hour-color-main {
-  @include fillmain(0.6);
-}
-.minute-color-main {
-  @include fillmain(0.8);
-}
-.second-color-main {
-  @include fillmain(1);
+.second-color {
+  fill: $second-color;
 }

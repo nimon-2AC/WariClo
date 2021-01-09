@@ -6,3 +6,9 @@ $main-color: #2f80ed;
 
 $text-base-color: $base-color;
 $text-sub-color: $sub-color;
+
+$month-color: mix($main-color, $base-color, 20%);
+$date-color: mix($main-color, $base-color, 40%);
+$hour-color: mix($main-color, $base-color, 60%);
+$minute-color: mix($main-color, $base-color, 80%);
+$second-color: mix($main-color, $base-color, 100%);

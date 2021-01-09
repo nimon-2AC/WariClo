@@ -9,5 +9,8 @@
   "eslint.options": {
     "configFile": "./.eslintrc"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.formatOnSave": false
+  }
 }
