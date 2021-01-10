@@ -1,0 +1,40 @@
+<!--
+  kind: "month" | "date" | "hour" | "minute" | "second"
+  outerRadius: ドーナツの外側の半径
+  innerRadius: ドーナツの内側の半径
+-->
+<g class="<%= kind %>" stroke-width="0">
+  <defs>
+    <path d="M 0 <%= outerRadius %>
+             A <%= outerRadius %> <%= outerRadius %> 0 1 0 0 -<%= outerRadius %>
+             A <%= outerRadius %> <%= outerRadius %> 0 1 0 0  <%= outerRadius %>
+             Z
+           M 0 <%= innerRadius %>
+             A <%= innerRadius %> <%= innerRadius %> 0 1 1 0 -<%= innerRadius %>
+             A <%= innerRadius %> <%= innerRadius %> 0 1 1 0  <%= innerRadius %>
+             Z" id="<%= kind %>-donut" />
+    <clipPath id="<%= kind %>-donut-clip">
+      <use xlink:href="#<%= kind %>-donut" />
+    </clipPath>
+    <path d="M 0 0
+             L 0 -<%= outerRadius %>
+             A <%= outerRadius %> <%= outerRadius %> 0 0 1 <%= outerRadius %> 0
+             Z" id="<%= kind %>-foreground" />
+    <path d="M 0 -<%= innerRadius %>
+           A <%= innerRadius %> <%= innerRadius %> 0 1 1 0  <%= innerRadius %>
+           A <%= innerRadius %> <%= innerRadius %> 0 1 1 0 -<%= innerRadius %>
+           Z" id="<%= kind %>-text-path" />
+    <text id="<%= kind %>-text" class="donut-text" dominant-baseline="text-after-edge">
+      <textPath xlink:href="#<%= kind %>-text-path" startOffset="0.1%">
+        <%= kind %>
+      </textPath>
+    </text>
+    <clipPath id="<%= kind %>-text-clip">
+      <use xlink:href="#<%= kind %>-text" />
+    </clipPath>
+  </defs>
+  <use xlink:href="#<%= kind %>-donut" class="donut-background <%= kind %>-color" />
+  <use xlink:href="#<%= kind %>-foreground" clip-path="url(#<%= kind %>-donut-clip)" class="donut-foreground <%= kind %>-color" />
+  <use xlink:href="#<%= kind %>-text" class="donut-text-color-dark" />
+  <use xlink:href="#<%= kind %>-foreground" clip-path="url(#<%= kind %>-text-clip)" class="donut-text-color-light" />
+</g>

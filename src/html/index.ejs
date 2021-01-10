@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include("./template/_head.ejs", {
+    title: "WariClo -- ドーナツ型年時計",
+    description: "WariClo はドーナツ型のアナログ時計とデジタル時計を表示するサイトです。「“いま”って 1 年のうちどのくらいが過ぎた？ 1 月なら？ 1 日なら？ 1 時間なら？ 1 分なら？」というのを視覚的にわかりやすく表示します。WariClo という名前は割合を表示する時計であるところから付けられています。"
+  }); %>
+</head>
+
+<body>
+  <h1 style="display: none;">WariClo</h1>
+  <div class="contents">
+    <svg class="clock" viewBox="-300 -300 600 600" fill="none" preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg">
+      <g id="digital-clock" class="digital-clock">
+        <text id="hhmmss" class="hhmmss" text-anchor="middle">
+          <tspan id="hh">00</tspan>:<tspan id="mm">00</tspan>:<tspan id="ss">00</tspan>
+        </text>
+        <text id="YYYYMMDD" class="YYYYMMDD" text-anchor="middle">
+          <tspan id="YYYY">1970</tspan>-<tspan id="MM">01</tspan>-<tspan id="DD">01</tspan>
+        </text>
+        <text id="WWW" class="WWW" text-anchor="middle">
+          Thursday
+        </text>
+      </g>
+
+      <g class="donuts">
+        <%- include("./template/_donut.ejs", {
+          kind: "month",
+          outerRadius: "300",
+          innerRadius: "277.5"
+        }); %>
+
+        <%- include("./template/_donut.ejs", {
+          kind: "date",
+          outerRadius: "275",
+          innerRadius: "252.5"
+        }); %>
+
+        <%- include("./template/_donut.ejs", {
+          kind: "hour",
+          outerRadius: "250",
+          innerRadius: "227.5"
+        }); %>
+
+        <%- include("./template/_donut.ejs", {
+          kind: "minute",
+          outerRadius: "225",
+          innerRadius: "202.5"
+        }); %>
+
+        <%- include("./template/_donut.ejs", {
+          kind: "second",
+          outerRadius: "200",
+          innerRadius: "177.5"
+        }); %>
+      </g>
+    </svg>
+  </div>
+</body>
+
+</html>
