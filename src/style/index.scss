@@ -23,7 +23,6 @@ body {
 .digital-clock {
   fill: $text-base-color;
 }
-
 .hhmmss {
   font-size: 64px;
 }
@@ -32,6 +31,21 @@ body {
 }
 .WWW {
   font-size: 24px;
+}
+.MM {
+  fill: $month-color;
+}
+.DD {
+  fill: $date-color;
+}
+.hh {
+  fill: $hour-color;
+}
+.mm {
+  fill: $minute-color;
+}
+.ss {
+  fill: $second-color;
 }
 
 .donut-background {
