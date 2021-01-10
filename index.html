@@ -1,66 +1,66 @@
-<!doctype html><html><head><meta charset="utf-8"/><title>WariClo -- ドーナツ型年時計</title><meta name="description" content="WariClo はドーナツ型のアナログ時計とデジタル時計を表示するサイトです。「“いま”って 1 年のうちどのくらいが過ぎた？ 1 月なら？ 1 日なら？ 1 時間なら？ 1 分なら？」というのを視覚的にわかりやすく表示します。WariClo という名前は割合を表示する時計であるところから付けられています。"><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="content-language" content="ja"></head><body><h1 style="display: none;">WariClo</h1><div class="contents"><svg class="clock" viewBox="-300 -300 600 600" fill="none" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><g id="digital-clock" class="digital-clock"><text id="hhmmss" class="hhmmss" text-anchor="middle"><tspan id="hh">00</tspan>:<tspan id="mm">00</tspan>:<tspan id="ss">00</tspan></text><text id="YYYYMMDD" class="YYYYMMDD" text-anchor="middle"><tspan id="YYYY">1970</tspan>-<tspan id="MM">01</tspan>-<tspan id="DD">01</tspan></text><text id="WWW" class="WWW" text-anchor="middle">Thursday</text></g><g class="donuts"><g class="month" stroke-width="0"><defs><path d="M 0 300
-                     A 300 300 0 1 0 0 -300
-                     A 300 300 0 1 0 0  300
-                     Z
-                   M 0 277.5
-                     A 277.5 277.5 0 1 1 0 -277.5
-                     A 277.5 277.5 0 1 1 0  277.5
-                     Z" id="month-donut"/><clipPath id="month-donut-clip"><use xlink:href="#month-donut"/></clipPath><path d="M 0 0
-                     L 0 -300
-                     A 300 300 0 0 1 300 0
-                     Z" id="month-foreground"/><path d="M 0 -277.5
-                   A 277.5 277.5 0 1 1 0  277.5
-                   A 277.5 277.5 0 1 1 0 -277.5
-                   Z" id="month-text-path"/><text id="month-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#month-text-path" startOffset="0.1%">Month</textPath></text><clipPath id="month-text-clip"><use xlink:href="#month-text"/></clipPath></defs><g class="donut-background"><use xlink:href="#month-donut" class="month-color-base"/><use xlink:href="#month-donut" class="month-color-main"/></g><g class="donut-foreground"><use xlink:href="#month-foreground" clip-path="url(#month-donut-clip)" class="month-color-base"/><use xlink:href="#month-foreground" clip-path="url(#month-donut-clip)" class="month-color-main"/></g><use xlink:href="#month-text" class="donut-text-color-dark"/><use xlink:href="#month-foreground" clip-path="url(#month-text-clip)" class="donut-text-color-light"/></g><g class="date" stroke-width="0"><defs><path d="M 0 275
-                     A 275 275 0 1 0 0 -275
-                     A 275 275 0 1 0 0  275
-                     Z
-                   M 0 252.5
-                     A 252.5 252.5 0 1 1 0 -252.5
-                     A 252.5 252.5 0 1 1 0  252.5
-                     Z" id="date-donut"/><clipPath id="date-donut-clip"><use xlink:href="#date-donut"/></clipPath><path d="M 0 0
-                     L 0 -275
-                     A 275 275 0 0 1 275 0
-                     Z" id="date-foreground"/><path d="M 0 -252.5
-                   A 252.5 252.5 0 1 1 0  252.5
-                   A 252.5 252.5 0 1 1 0 -252.5
-                   Z" id="date-text-path"/><text id="date-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#date-text-path" startOffset="0.1%">date</textPath></text><clipPath id="date-text-clip"><use xlink:href="#date-text"/></clipPath></defs><g class="donut-background"><use xlink:href="#date-donut" class="date-color-base"/><use xlink:href="#date-donut" class="date-color-main"/></g><g class="donut-foreground"><use xlink:href="#date-foreground" clip-path="url(#date-donut-clip)" class="date-color-base"/><use xlink:href="#date-foreground" clip-path="url(#date-donut-clip)" class="date-color-main"/></g><use xlink:href="#date-text" class="donut-text-color-dark"/><use xlink:href="#date-foreground" clip-path="url(#date-text-clip)" class="donut-text-color-light"/></g><g class="hour" stroke-width="0"><defs><path d="M 0 250
-                     A 250 250 0 1 0 0 -250
-                     A 250 250 0 1 0 0  250
-                     Z
-                   M 0 227.5
-                     A 227.5 227.5 0 1 1 0 -227.5
-                     A 227.5 227.5 0 1 1 0  227.5
-                     Z" id="hour-donut"/><clipPath id="hour-donut-clip"><use xlink:href="#hour-donut"/></clipPath><path d="M 0 0
-                     L 0 -250
-                     A 250 250 0 0 1 250 0
-                     Z" id="hour-foreground"/><path d="M 0 -227.5
-                   A 227.5 227.5 0 1 1 0  227.5
-                   A 227.5 227.5 0 1 1 0 -227.5
-                   Z" id="hour-text-path"/><text id="hour-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#hour-text-path" startOffset="0.1%">hour</textPath></text><clipPath id="hour-text-clip"><use xlink:href="#hour-text"/></clipPath></defs><g class="donut-background"><use xlink:href="#hour-donut" class="hour-color-base"/><use xlink:href="#hour-donut" class="hour-color-main"/></g><g class="donut-foreground"><use xlink:href="#hour-foreground" clip-path="url(#hour-donut-clip)" class="hour-color-base"/><use xlink:href="#hour-foreground" clip-path="url(#hour-donut-clip)" class="hour-color-main"/></g><use xlink:href="#hour-text" class="donut-text-color-dark"/><use xlink:href="#hour-foreground" clip-path="url(#hour-text-clip)" class="donut-text-color-light"/></g><g class="minute" stroke-width="0"><defs><path d="M 0 225
-                     A 225 225 0 1 0 0 -225
-                     A 225 225 0 1 0 0  225
-                     Z
-                   M 0 202.5
-                     A 202.5 202.5 0 1 1 0 -202.5
-                     A 202.5 202.5 0 1 1 0  202.5
-                     Z" id="minute-donut"/><clipPath id="minute-donut-clip"><use xlink:href="#minute-donut"/></clipPath><path d="M 0 0
-                     L 0 -225
-                     A 225 225 0 0 1 225 0
-                     Z" id="minute-foreground"/><path d="M 0 -202.5
-                   A 202.5 202.5 0 1 1 0  202.5
-                   A 202.5 202.5 0 1 1 0 -202.5
-                   Z" id="minute-text-path"/><text id="minute-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#minute-text-path" startOffset="0.1%">minute</textPath></text><clipPath id="minute-text-clip"><use xlink:href="#minute-text"/></clipPath></defs><g class="donut-background"><use xlink:href="#minute-donut" class="minute-color-base"/><use xlink:href="#minute-donut" class="minute-color-main"/></g><g class="donut-foreground"><use xlink:href="#minute-foreground" clip-path="url(#minute-donut-clip)" class="minute-color-base"/><use xlink:href="#minute-foreground" clip-path="url(#minute-donut-clip)" class="minute-color-main"/></g><use xlink:href="#minute-text" class="donut-text-color-dark"/><use xlink:href="#minute-foreground" clip-path="url(#minute-text-clip)" class="donut-text-color-light"/></g><g class="second" stroke-width="0"><defs><path d="M 0 200
-                     A 200 200 0 1 0 0 -200
-                     A 200 200 0 1 0 0  200
-                     Z
-                   M 0 177.5
-                     A 177.5 177.5 0 1 1 0 -177.5
-                     A 177.5 177.5 0 1 1 0  177.5
-                     Z" id="second-donut"/><clipPath id="second-donut-clip"><use xlink:href="#second-donut"/></clipPath><path d="M 0 0
-                     L 0 -200
-                     A 200 200 0 0 1 200 0
-                     Z" id="second-foreground"/><path d="M 0 -177.5
-                   A 177.5 177.5 0 1 1 0  177.5
-                   A 177.5 177.5 0 1 1 0 -177.5
-                   Z" id="second-text-path"/><text id="second-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#second-text-path" startOffset="0.1%">second</textPath></text><clipPath id="second-text-clip"><use xlink:href="#second-text"/></clipPath></defs><g class="donut-background"><use xlink:href="#second-donut" class="second-color-base"/><use xlink:href="#second-donut" class="second-color-main"/></g><g class="donut-foreground"><use xlink:href="#second-foreground" clip-path="url(#second-donut-clip)" class="second-color-base"/><use xlink:href="#second-foreground" clip-path="url(#second-donut-clip)" class="second-color-main"/></g><use xlink:href="#second-text" class="donut-text-color-dark"/><use xlink:href="#second-foreground" clip-path="url(#second-text-clip)" class="donut-text-color-light"/></g></g></svg></div><script src="bundle.js"></script></body></html>
+<!doctype html><html><head><meta charset="utf-8"/><title>WariClo -- ドーナツ型年時計</title><meta name="description" content="WariClo はドーナツ型のアナログ時計とデジタル時計を表示するサイトです。「“いま”って 1 年のうちどのくらいが過ぎた？ 1 月なら？ 1 日なら？ 1 時間なら？ 1 分なら？」というのを視覚的にわかりやすく表示します。WariClo という名前は割合を表示する時計であるところから付けられています。"><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="content-language" content="ja"></head><body><h1 style="display:none">WariClo</h1><div class="contents"><svg class="clock" viewBox="-300 -300 600 600" fill="none" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><g id="digital-clock" class="digital-clock"><text id="hhmmss" class="hhmmss" text-anchor="middle"><tspan id="hh">00</tspan>:<tspan id="mm">00</tspan>:<tspan id="ss">00</tspan></text><text id="YYYYMMDD" class="YYYYMMDD" text-anchor="middle"><tspan id="YYYY">1970</tspan>-<tspan id="MM">01</tspan>-<tspan id="DD">01</tspan></text><text id="WWW" class="WWW" text-anchor="middle">Thursday</text></g><g class="donuts"><g class="month" stroke-width="0"><defs><path d="M 0 300
+             A 300 300 0 1 0 0 -300
+             A 300 300 0 1 0 0  300
+             Z
+           M 0 277.5
+             A 277.5 277.5 0 1 1 0 -277.5
+             A 277.5 277.5 0 1 1 0  277.5
+             Z" id="month-donut"/><clipPath id="month-donut-clip"><use xlink:href="#month-donut"/></clipPath><path d="M 0 0
+             L 0 -300
+             A 300 300 0 0 1 300 0
+             Z" id="month-foreground"/><path d="M 0 -277.5
+           A 277.5 277.5 0 1 1 0  277.5
+           A 277.5 277.5 0 1 1 0 -277.5
+           Z" id="month-text-path"/><text id="month-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#month-text-path" startOffset="0.1%">month</textPath></text><clipPath id="month-text-clip"><use xlink:href="#month-text"/></clipPath></defs><use xlink:href="#month-donut" class="donut-background month-color"/><use xlink:href="#month-foreground" clip-path="url(#month-donut-clip)" class="donut-foreground month-color"/><use xlink:href="#month-text" class="donut-text-color-dark"/><use xlink:href="#month-foreground" clip-path="url(#month-text-clip)" class="donut-text-color-light"/></g><g class="date" stroke-width="0"><defs><path d="M 0 275
+             A 275 275 0 1 0 0 -275
+             A 275 275 0 1 0 0  275
+             Z
+           M 0 252.5
+             A 252.5 252.5 0 1 1 0 -252.5
+             A 252.5 252.5 0 1 1 0  252.5
+             Z" id="date-donut"/><clipPath id="date-donut-clip"><use xlink:href="#date-donut"/></clipPath><path d="M 0 0
+             L 0 -275
+             A 275 275 0 0 1 275 0
+             Z" id="date-foreground"/><path d="M 0 -252.5
+           A 252.5 252.5 0 1 1 0  252.5
+           A 252.5 252.5 0 1 1 0 -252.5
+           Z" id="date-text-path"/><text id="date-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#date-text-path" startOffset="0.1%">date</textPath></text><clipPath id="date-text-clip"><use xlink:href="#date-text"/></clipPath></defs><use xlink:href="#date-donut" class="donut-background date-color"/><use xlink:href="#date-foreground" clip-path="url(#date-donut-clip)" class="donut-foreground date-color"/><use xlink:href="#date-text" class="donut-text-color-dark"/><use xlink:href="#date-foreground" clip-path="url(#date-text-clip)" class="donut-text-color-light"/></g><g class="hour" stroke-width="0"><defs><path d="M 0 250
+             A 250 250 0 1 0 0 -250
+             A 250 250 0 1 0 0  250
+             Z
+           M 0 227.5
+             A 227.5 227.5 0 1 1 0 -227.5
+             A 227.5 227.5 0 1 1 0  227.5
+             Z" id="hour-donut"/><clipPath id="hour-donut-clip"><use xlink:href="#hour-donut"/></clipPath><path d="M 0 0
+             L 0 -250
+             A 250 250 0 0 1 250 0
+             Z" id="hour-foreground"/><path d="M 0 -227.5
+           A 227.5 227.5 0 1 1 0  227.5
+           A 227.5 227.5 0 1 1 0 -227.5
+           Z" id="hour-text-path"/><text id="hour-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#hour-text-path" startOffset="0.1%">hour</textPath></text><clipPath id="hour-text-clip"><use xlink:href="#hour-text"/></clipPath></defs><use xlink:href="#hour-donut" class="donut-background hour-color"/><use xlink:href="#hour-foreground" clip-path="url(#hour-donut-clip)" class="donut-foreground hour-color"/><use xlink:href="#hour-text" class="donut-text-color-dark"/><use xlink:href="#hour-foreground" clip-path="url(#hour-text-clip)" class="donut-text-color-light"/></g><g class="minute" stroke-width="0"><defs><path d="M 0 225
+             A 225 225 0 1 0 0 -225
+             A 225 225 0 1 0 0  225
+             Z
+           M 0 202.5
+             A 202.5 202.5 0 1 1 0 -202.5
+             A 202.5 202.5 0 1 1 0  202.5
+             Z" id="minute-donut"/><clipPath id="minute-donut-clip"><use xlink:href="#minute-donut"/></clipPath><path d="M 0 0
+             L 0 -225
+             A 225 225 0 0 1 225 0
+             Z" id="minute-foreground"/><path d="M 0 -202.5
+           A 202.5 202.5 0 1 1 0  202.5
+           A 202.5 202.5 0 1 1 0 -202.5
+           Z" id="minute-text-path"/><text id="minute-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#minute-text-path" startOffset="0.1%">minute</textPath></text><clipPath id="minute-text-clip"><use xlink:href="#minute-text"/></clipPath></defs><use xlink:href="#minute-donut" class="donut-background minute-color"/><use xlink:href="#minute-foreground" clip-path="url(#minute-donut-clip)" class="donut-foreground minute-color"/><use xlink:href="#minute-text" class="donut-text-color-dark"/><use xlink:href="#minute-foreground" clip-path="url(#minute-text-clip)" class="donut-text-color-light"/></g><g class="second" stroke-width="0"><defs><path d="M 0 200
+             A 200 200 0 1 0 0 -200
+             A 200 200 0 1 0 0  200
+             Z
+           M 0 177.5
+             A 177.5 177.5 0 1 1 0 -177.5
+             A 177.5 177.5 0 1 1 0  177.5
+             Z" id="second-donut"/><clipPath id="second-donut-clip"><use xlink:href="#second-donut"/></clipPath><path d="M 0 0
+             L 0 -200
+             A 200 200 0 0 1 200 0
+             Z" id="second-foreground"/><path d="M 0 -177.5
+           A 177.5 177.5 0 1 1 0  177.5
+           A 177.5 177.5 0 1 1 0 -177.5
+           Z" id="second-text-path"/><text id="second-text" class="donut-text" dominant-baseline="text-after-edge"><textPath xlink:href="#second-text-path" startOffset="0.1%">second</textPath></text><clipPath id="second-text-clip"><use xlink:href="#second-text"/></clipPath></defs><use xlink:href="#second-donut" class="donut-background second-color"/><use xlink:href="#second-foreground" clip-path="url(#second-donut-clip)" class="donut-foreground second-color"/><use xlink:href="#second-text" class="donut-text-color-dark"/><use xlink:href="#second-foreground" clip-path="url(#second-text-clip)" class="donut-text-color-light"/></g></g></svg></div><script src="bundle.js"></script></body></html>
