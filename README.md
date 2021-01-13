@@ -22,11 +22,7 @@ VSCode で開発するなら [Remote Containers](https://code.visualstudio.com/d
 
 ## いろいろリンク
 
-### サイト
-
-[実際のサイトはここ](https://wariclo.nimon.dev/)
-
-### プロトタイプ（Figma）
-
+- [実際のサイト（WariClo）](https://wariclo.nimon.dev/)
 - [プロトタイプ編集画面（編集はできないよ）](https://www.figma.com/file/zl0ihnkAH6VYWpeUDUBd3e/PC?node-id=0%3A1)
 - [プロトタイプ実行画面](https://www.figma.com/proto/zl0ihnkAH6VYWpeUDUBd3e/PC?node-id=53%3A1836&scaling=min-zoom)
+- [開発記（ブログ）](https://blog.nimon.dev/development/WariClo/)
